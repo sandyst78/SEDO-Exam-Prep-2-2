@@ -4,8 +4,7 @@ pipeline{
         stage("Restore dep."){
             when {
                 anyOf{
-                    branch 'main'
-                    branch 'feature'
+                    branch 'main'                    
                 }
             }
             steps{
@@ -15,8 +14,7 @@ pipeline{
         stage("build App"){
             when {
                 anyOf{
-                    branch 'maim'
-                    branch 'feature'
+                    branch 'maim'                   
                 }
             }
             steps{
@@ -26,8 +24,7 @@ pipeline{
         stage("Run tests"){
             when {
                 anyOf{
-                    branch 'maim'
-                    branch 'feature'
+                    branch 'maim'                    
                 }
             }
             steps{
