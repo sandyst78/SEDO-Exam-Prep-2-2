@@ -8,7 +8,7 @@ pipeline{
         }
         stage("build App"){            
             steps{
-               bat "dotnet publish --framework net6.0 --configuration Release"
+               bat "dotnet publish  --configuration Release"
             }          
         }
         stage("Run tests"){            
